@@ -18,7 +18,7 @@ Then run this app:
 import requests
 import streamlit as st
  
-API_BASE = "st.secrets.get("API_BASE","https://legal-ease-bay.vercel.app")
+API_BASE = st.secrets.get("API_BASE","https://legal-ease-bay.vercel.app")
 
  
 st.set_page_config(page_title="LegalEase", page_icon="⚖️", layout="centered")
