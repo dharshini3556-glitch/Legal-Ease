@@ -1,4 +1,6 @@
 #streamlit_app.py
+import requests
+import streamlit as st
 """
 streamlit_app.py
 ------------------
@@ -16,7 +18,8 @@ Then run this app:
 import requests
 import streamlit as st
  
-API_BASE = "http://localhost:8000"
+API_BASE = "st.secrets.get("API_BASE","https://legal-ease-bay.vercel.app")
+
  
 st.set_page_config(page_title="LegalEase", page_icon="⚖️", layout="centered")
 st.title("⚖️ LegalEase — AI-Powered Legal Document Generator")
