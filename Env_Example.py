@@ -1,0 +1,4 @@
+#.env.example
+# Rename this file to .env and fill in your key
+GOOGLE_API_KEY=your_google_generativeai_api_key_here
+ 
