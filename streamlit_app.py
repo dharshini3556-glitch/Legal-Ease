@@ -1,6 +1,6 @@
 #streamlit_app.py
-import requests
 import streamlit as st
+import requests
 """
 streamlit_app.py
 ------------------
@@ -15,10 +15,10 @@ Then run this app:
     streamlit run streamlit_app.py
 """
  
-import requests
-import streamlit as st
+
  
-API_BASE = st.secrets.get("API_BASE","https://legal-ease-bay.vercel.app")
+API_BASE = st.secrets.get("API_BASE","https://legal-ease-bay.vercel.app").rstrip("/")
+url = f"{API_BASE}/generate/employment-contract"
 
  
 st.set_page_config(page_title="LegalEase", page_icon="⚖️", layout="centered")
