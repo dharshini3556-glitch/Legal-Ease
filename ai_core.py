@@ -14,7 +14,8 @@ from dotenv import load_dotenv
 load_dotenv()
  
 API_KEY = os.getenv("GOOGLE_API_KEY")
-MODEL_NAME = "gemini-1.5-pro"
+genai.configure(api_key=api-key)
+MODEL_NAME = genai.GenerativeModel("gemini-1.5-flash")
  
 if not API_KEY:
     raise RuntimeError(
