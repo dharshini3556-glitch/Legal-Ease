@@ -17,7 +17,7 @@ Then run this app:
  
 
  
-Backend_URL = "https://legal-ease-cbgl.vercel.app"
+API_BASE = "https://legal-ease-cbgl.vercel.app"
 
 st.set_page_config(page_title="LegalEase", page_icon="⚖️", layout="centered")
 st.title("⚖️ LegalEase — AI-Powered Legal Document Generator")
