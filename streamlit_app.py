@@ -17,10 +17,8 @@ Then run this app:
  
 
  
-API_BASE = st.secrets.get("API_BASE","https://legal-ease-bay.vercel.app").rstrip("/")
-url = f"{API_BASE}/generate/employment-contract"
+Backend_URL = "https://legal-ease-cbgl.vercel.app"
 
- 
 st.set_page_config(page_title="LegalEase", page_icon="⚖️", layout="centered")
 st.title("⚖️ LegalEase — AI-Powered Legal Document Generator")
 st.caption("Generate employment contracts, NDAs, and lease agreements in seconds.")
