@@ -165,7 +165,7 @@ async def generate_employment_contract_branded(
  
     logo_path = None
     if logo is not None:
-        logo_path = os.path.join(OUTPUT_DIR, f"logo_{uuid.uuid4().hex[:6]}_{logo.filename}")
+        logo_path = os.path.join("/tmp", f"logo_{uuid.uuid4().hex[:6]}_{logo.filename}")
         with open(logo_path, "wb") as f:
             f.write(await logo.read())
  
